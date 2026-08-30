@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ciclo — não existe lixo, existe destino errado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress-rail" id="progressRail" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a href="#topo" class="brand">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 100 100" class="mark-svg">
+        <use href="#icon-loop"></use>
+      </svg>
+    </span>
+    Ciclo
+  </a>
+  <nav class="site-nav" aria-label="Navegação principal">
+    <a href="#numeros">Números</a>
+    <a href="#processo">Processo</a>
+    <a href="#materiais">Materiais</a>
+    <a href="#mitos">Mitos</a>
+  </nav>
+  <a class="nav-cta" href="#comece">Comece agora</a>
+</header>
+
+<main id="topo">
+
+  <!-- HERO -->
+<section class="hero">
+    <div class="hero-grain" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+        <p class="eyebrow mono">R · E · C · I · C · L · A · G · E · M</p>
+
+        <h1 class="hero-title">
+            Não existe <span class="strike">lixo</span>.<br>
+            Existe <em>destino errado</em>.
+        </h1>
+
+        <p class="hero-sub">
+            Tudo que você descarta hoje ainda pode virar outra coisa amanhã —
+            se seguir o caminho certo. Role a página e veja esse caminho,
+            material por material.
+        </p>
+
+        <a href="#numeros" class="hero-scroll" aria-label="Rolar para a próxima seção">
+            <span>role</span>
+            <svg viewBox="0 0 24 40" class="scroll-line">
+                <line x1="12" y1="0" x2="12" y2="32"/>
+                <polyline points="4,24 12,32 20,24"/>
+            </svg>
+        </a>
+    </div>
+
+    <div class="hero-image">
+        <img src="Reciclagem2.png" alt="Imagem ilustrativa de reciclagem">
+    </div>
+</section>
+
+  <!-- NUMEROS -->
+  <section class="numeros" id="numeros">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">// por que isso importa</p>
+      <h2>O que uma tonelada de material bem separado evita</h2>
+    </div>
+    <div class="stat-grid">
+      <div class="stat-card reveal">
+        <span class="stat-num mono" data-target="17" data-suffix=" árvores">0</span>
+        <p>economizadas para cada tonelada de papel reciclado em vez de virgem.</p>
+      </div>
+      <div class="stat-card reveal">
+        <span class="stat-num mono" data-target="95" data-suffix="%">0</span>
+        <p>menos energia gasta para reciclar alumínio do que para extraí-lo do minério.</p>
+      </div>
+      <div class="stat-card reveal">
+        <span class="stat-num mono" data-target="400" data-suffix=" anos">0</span>
+        <p>é o tempo que uma garrafa PET leva para se decompor sozinha num aterro.</p>
+      </div>
+      <div class="stat-card reveal">
+        <span class="stat-num mono" data-target="100" data-suffix="%">0</span>
+        <p>reciclável indefinidamente — o vidro pode virar vidro novo para sempre, sem perder qualidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESSO -->
+  <section class="processo" id="processo">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">// o percurso</p>
+      <h2>Do descarte ao produto novo, em quatro etapas</h2>
+    </div>
+    <div class="timeline">
+      <div class="step reveal">
+        <span class="step-code mono">R-01</span>
+        <h3>Coleta</h3>
+        <p>O material sai de casa, do comércio ou da rua — idealmente já separado — e chega a um ponto de coleta seletiva ou cooperativa.</p>
+      </div>
+      <div class="step reveal">
+        <span class="step-code mono">R-02</span>
+        <h3>Triagem</h3>
+        <p>Catadores e máquinas separam por tipo: papel, plástico, vidro, metal. Contaminação aqui pode inutilizar um lote inteiro.</p>
+      </div>
+      <div class="step reveal">
+        <span class="step-code mono">R-03</span>
+        <h3>Processamento</h3>
+        <p>Cada material é limpo, triturado, derretido ou desfibrado, virando matéria-prima pronta para uso industrial.</p>
+      </div>
+      <div class="step reveal">
+        <span class="step-code mono">R-04</span>
+        <h3>Transformação</h3>
+        <p>A matéria-prima reciclada volta ao mercado como embalagem, tecido, peça ou objeto novo — o ciclo se fecha.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATERIAIS -->
+  <section class="materiais" id="materiais">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">// separe pela cor certa</p>
+      <h2>Cada material tem sua cor — e sua regra</h2>
+      <p class="section-sub">Padrão de cores da coleta seletiva usado no Brasil (Resolução CONAMA 275).</p>
+    </div>
+    <div class="material-grid">
+
+      <div class="material-card reveal" style="--mat-color:#3B6EA5" tabindex="0">
+        <div class="material-fill" aria-hidden="true"></div>
+        <div class="material-content">
+          <span class="material-dot" aria-hidden="true"></span>
+          <h3>Papel <span class="mono">AZUL</span></h3>
+          <p>Jornais, caixas e cadernos. Fica de fora: papel engordurado, plastificado ou papel higiênico.</p>
+        </div>
+      </div>
+
+      <div class="material-card reveal" style="--mat-color:#C1443C" tabindex="0">
+        <div class="material-fill" aria-hidden="true"></div>
+        <div class="material-content">
+          <span class="material-dot" aria-hidden="true"></span>
+          <h3>Plástico <span class="mono">VERMELHO</span></h3>
+          <p>Garrafas PET, potes e embalagens. Enxágue antes: resíduo de comida contamina o lote inteiro.</p>
+        </div>
+      </div>
+
+      <div class="material-card reveal" style="--mat-color:#3E8A5C" tabindex="0">
+        <div class="material-fill" aria-hidden="true"></div>
+        <div class="material-content">
+          <span class="material-dot" aria-hidden="true"></span>
+          <h3>Vidro <span class="mono">VERDE</span></h3>
+          <p>Potes e garrafas. Fica de fora: espelhos, lâmpadas e vidros temperados — têm composição diferente.</p>
+        </div>
+      </div>
+
+      <div class="material-card reveal" style="--mat-color:#D4A72C" tabindex="0">
+        <div class="material-fill" aria-hidden="true"></div>
+        <div class="material-content">
+          <span class="material-dot" aria-hidden="true"></span>
+          <h3>Metal <span class="mono">AMARELO</span></h3>
+          <p>Latas de alumínio e aço. É o material com o maior ganho de energia ao ser reciclado em vez de extraído.</p>
+        </div>
+      </div>
+
+      <div class="material-card reveal" style="--mat-color:#8B5A2B" tabindex="0">
+        <div class="material-fill" aria-hidden="true"></div>
+        <div class="material-content">
+          <span class="material-dot" aria-hidden="true"></span>
+          <h3>Orgânico <span class="mono">MARROM</span></h3>
+          <p>Cascas, restos de comida e borra de café. Não é reciclado — é compostado, e vira adubo.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MITOS -->
+  <section class="mitos" id="mitos">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">// antes de jogar fora</p>
+      <h2>Mitos que atrapalham a reciclagem</h2>
+    </div>
+    <div class="accordion reveal">
+
+      <div class="acc-item">
+        <button class="acc-trigger" aria-expanded="false">
+          <span>"Não precisa lavar a embalagem, na usina eles limpam."</span>
+          <span class="acc-icon" aria-hidden="true"></span>
+        </button>
+        <div class="acc-panel">
+          <p>Falso. Restos de comida e gordura contaminam fardos inteiros e podem fazer com que todo o lote seja descartado como lixo comum. Um enxágue rápido já resolve.</p>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-trigger" aria-expanded="false">
+          <span>"Papel plastificado e papel higiênico podem ir no azul."</span>
+          <span class="acc-icon" aria-hidden="true"></span>
+        </button>
+        <div class="acc-panel">
+          <p>Não. Papel com plástico, cera ou gordura não se desfaz em água como o papel comum, e papel higiênico usado é resíduo sanitário — os dois vão no lixo comum.</p>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-trigger" aria-expanded="false">
+          <span>"Todo plástico é reciclado do mesmo jeito."</span>
+          <span class="acc-icon" aria-hidden="true"></span>
+        </button>
+        <div class="acc-panel">
+          <p>Cada tipo de plástico (PET, PEAD, PVC, entre outros) tem um processo próprio e não pode ser misturado no derretimento — por isso existem os números de 1 a 7 na base das embalagens.</p>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-trigger" aria-expanded="false">
+          <span>"Separar em casa não faz diferença se depois tudo se mistura no caminhão."</span>
+          <span class="acc-icon" aria-hidden="true"></span>
+        </button>
+        <div class="acc-panel">
+          <p>Faz, sim. A coleta seletiva usa rotas e caminhões próprios, diferentes do lixo comum — a separação em casa é o que torna a triagem depois viável em escala.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final" id="comece">
+    <div class="cta-inner reveal">
+      <p class="eyebrow mono">// comece hoje</p>
+      <h2>Três hábitos que já fecham o ciclo</h2>
+      <ol class="cta-list">
+        <li><strong>Separe por tipo</strong> — mesmo sem coleta seletiva na sua rua, cooperativas e pontos de entrega voluntária aceitam material já triado.</li>
+        <li><strong>Enxágue antes de descartar</strong> — comida e gordura são a principal causa de lotes inteiros rejeitados na triagem.</li>
+        <li><strong>Reduza antes de reciclar</strong> — reciclar gasta energia; recusar e reutilizar embalagens gasta menos.</li>
+      </ol>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <span class="brand-mark small" aria-hidden="true">
+    <svg viewBox="0 0 100 100" class="mark-svg"><use href="Reciclagem.png"></use></svg>
+  </span>
+  <p>Página educativa sobre reciclagem — feita por Ulnog.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
