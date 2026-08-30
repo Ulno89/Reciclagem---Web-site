@@ -1,5 +1,5 @@
 // Não me pergunte sobre o que eu com o que eu tava na cabeça para fazer isso kkkkk, por era só eu ter feito um slide 
-// que ja tava bom kkkkk
+// que ja tava bom kkkkk, é fogo viu
 const progressRail = document.getElementById('progressRail');
 
 function updateProgress(){
