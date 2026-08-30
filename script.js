@@ -1,6 +1,5 @@
-// ============================================================
-// PROGRESS RAIL — preenche conforme a rolagem
-// ============================================================
+// Não me pergunte sobre o que eu com o que eu tava na cabeça para fazer isso kkkkk, por era só eu ter feito um slide 
+// que ja tava bom kkkkk
 const progressRail = document.getElementById('progressRail');
 
 function updateProgress(){
@@ -8,15 +7,11 @@ function updateProgress(){
   const docHeight = document.documentElement.scrollHeight - window.innerHeight;
   const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
   progressRail.style.width = pct + '%';
-  // desloca o gradiente para "percorrer" as cores dos materiais junto com a leitura
   progressRail.style.backgroundPosition = `${pct}% 0`;
 }
 window.addEventListener('scroll', updateProgress, { passive: true });
 updateProgress();
 
-// ============================================================
-// REVEAL ON SCROLL
-// ============================================================
 const revealEls = document.querySelectorAll('.reveal');
 
 if ('IntersectionObserver' in window){
@@ -34,9 +29,6 @@ if ('IntersectionObserver' in window){
   revealEls.forEach(el => el.classList.add('is-visible'));
 }
 
-// ============================================================
-// CONTADORES ANIMADOS
-// ============================================================
 const statEls = document.querySelectorAll('.stat-num');
 
 function animateCount(el){
@@ -47,7 +39,7 @@ function animateCount(el){
 
   function tick(now){
     const progress = Math.min((now - start) / duration, 1);
-    const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+    const eased = 1 - Math.pow(1 - progress, 3);
     const value = Math.floor(eased * target);
     el.textContent = value + suffix;
     if (progress < 1){
@@ -76,16 +68,12 @@ if ('IntersectionObserver' in window){
   });
 }
 
-// ============================================================
-// ACORDEÃO DE MITOS
-// ============================================================
 const accTriggers = document.querySelectorAll('.acc-trigger');
 
 accTriggers.forEach(trigger => {
   trigger.addEventListener('click', () => {
     const isOpen = trigger.getAttribute('aria-expanded') === 'true';
 
-    // fecha os outros itens (comportamento de acordeão único)
     accTriggers.forEach(other => {
       if (other !== trigger) other.setAttribute('aria-expanded', 'false');
     });
